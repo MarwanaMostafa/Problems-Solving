@@ -18,7 +18,7 @@ class Solution {
         result.add(head.val);
 
         int len = result.size();
-        for (int i = 0; i < len; i++)
+        for (int i = 0; i < len/2; i++)
             if (result.get(i) != result.get(len - i - 1))
                 return false;
 
