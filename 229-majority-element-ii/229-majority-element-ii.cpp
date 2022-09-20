@@ -1,15 +1,16 @@
 class Solution {
 public:
     vector<int> majorityElement(vector<int>& nums) {
-            map<int, int> temp;
-        vector<int> result;
+      
+    map<int, int> count;
+    vector<int> result;
 
-        for (int i = 0; i < nums.size(); i++)
-            temp.insert({nums[i], temp[nums[i]]++});
-        for (auto i : temp)
-            if (i.second > nums.size() / 3)
-                result.push_back(i.first);
+    for (int i = 0; i < nums.size(); i++)
+        count.insert({nums[i], count[nums[i]]++});
+    for (map<int, int>::iterator itr = count.begin(); itr != count.end(); ++itr)
+        if (itr->second > nums.size() / 3)
+            result.push_back(itr->first);
 
-        return result;
+    return result;
     }
 };
