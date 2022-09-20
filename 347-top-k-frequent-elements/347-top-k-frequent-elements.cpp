@@ -1,14 +1,12 @@
 class Solution {
 public:
     vector<int> topKFrequent(vector<int>& nums, int k) {
-       map<int, int> count;
+       unordered_map<int, int> count;
     vector<int> result;
 
     for (int i = 0; i < nums.size(); i++)
         count.insert({nums[i], count[nums[i]]++});
 
-    // for (auto i : count)
-    // cout << i.first << "    " << i.second << endl;
 
     int counter = 0;
     int max = 0;
