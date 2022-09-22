@@ -1,9 +1,8 @@
 class Solution {
 public:
-    int addDigits(int num) {
-    while (num >= 10)
-        num = num % 10 + (num / 10);
+    int addDigits(int num) {       
+        
+        return num - 9 * ((num-1)/9);
 
-    return num;
     }
 };
