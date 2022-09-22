@@ -6,7 +6,8 @@ public:
     {
         if (nums[i] != 0)
         {
-            swap(nums[j], nums[i]);
+            if(nums[j]==0)
+                swap(nums[j], nums[i]);
             j++;
         }
     }    
