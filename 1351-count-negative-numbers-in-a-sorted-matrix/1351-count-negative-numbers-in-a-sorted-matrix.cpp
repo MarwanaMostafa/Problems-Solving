@@ -7,7 +7,6 @@ public:
         for (int j = 0; j < grid[i].size(); j++)
             if (grid[i][j] < 0)
                 counter++;
-            
     return counter;
     }
 };
