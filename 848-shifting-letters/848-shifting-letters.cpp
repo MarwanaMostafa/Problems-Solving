@@ -3,7 +3,8 @@ public:
     string shiftingLetters(string s, vector<int>& shifts) {
     int sum = 0;
     for (int i = 0; i < shifts.size(); i++)
-    {   if(shifts[i]>26)
+    {   
+        if(shifts[i]>26)
             shifts[i]%=26;
         sum += shifts[i];
     }
