@@ -7,13 +7,15 @@ public:
         if(shifts[i]>26)
             shifts[i]%=26;
         sum += shifts[i];
+    
     }
     for (int i = 0; i < shifts.size(); i++)
     {
-        if ((s[i] + (sum % 26)) > 122)
-            s[i] = (s[i] + (sum % 26)) - 26;
+        int temp=(s[i] + (sum % 26));
+        if (temp > 122)
+            s[i] = temp - 26;
         else
-            s[i] = (s[i] + (sum % 26));
+            s[i] = temp;
         sum -= shifts[i];
     }
     return s;
