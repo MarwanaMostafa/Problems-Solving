@@ -11,6 +11,7 @@ public:
     }
     for (int i = 0; i < shifts.size(); i++)
     {
+    
         int temp=(s[i] + (sum % 26));
         if (temp > 122)
             s[i] = temp - 26;
