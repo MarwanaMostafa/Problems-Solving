@@ -1,9 +1,8 @@
 class Solution {
 public:
     int prefixCount(vector<string>& words, string pref) {
-       int count = 0;
+     int count = 0;
     int flag = 0;
-    string temp = "";
     for (int i = 0; i < words.size(); i++)
     {
         for (int ii = 0; ii < words[i].length() && ii < pref.length(); ii++)
