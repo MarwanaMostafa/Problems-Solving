@@ -9,6 +9,7 @@ public:
         else if (nums[i] < 0)
             counter++;
     }
+        
     if (counter % 2 == 0)
         return 1;
     return -1;
