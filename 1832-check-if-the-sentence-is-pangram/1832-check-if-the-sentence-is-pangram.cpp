@@ -8,8 +8,7 @@ public:
         check[sentence[i]];
     
     if (check.size() == 26)
-        return true;
-        
+        return true;      
   
     return false ;
     }
