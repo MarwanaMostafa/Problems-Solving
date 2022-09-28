@@ -7,6 +7,8 @@ public:
         check.insert(sentence[i]);
     if (check.size() == 26)
         return true;
+        
+        
     return false;
     }
 };
