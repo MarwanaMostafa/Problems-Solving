@@ -2,12 +2,13 @@ class Solution {
 public:
     bool checkIfPangram(string sentence) {
        
-   set<char> check;
+    map<char, int> check;
     for (int i = 0; i < sentence.length(); i++)
-        check.insert(sentence[i]);
+        check[sentence[i]];
+    
     if (check.size() == 26)
-        return true;
-        
-    return false;
+        return true;      
+  
+    return false ;
     }
 };
