@@ -7,10 +7,8 @@ public:
         temp=arr[i];
         arr[i]=mx;
         mx=max(mx,temp);
-    }    
-        
-        
-        
+         }    
+
         
         
         
