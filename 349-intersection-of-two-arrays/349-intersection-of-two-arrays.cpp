@@ -21,7 +21,6 @@ public:
         {
             if (nums1[i] == nums2[j])
             {
-                nums2[j] = -1;
                 result.push_back(nums1[i]);
                 break;
             }
