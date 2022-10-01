@@ -9,7 +9,6 @@ public:
         if (summation > largest_Altitude)
             largest_Altitude = summation;
     }
-    cout<<largest_Altitude<<endl;
     return largest_Altitude;
     }
 };
