@@ -4,9 +4,11 @@ public:
         int minVal=INT_MAX;
         int temp=0;
         for(int i=0;i<nums.size();i++)
-        {temp=abs(i-start);
+        {
+            temp=abs(i-start);
             if(nums[i]==target && temp<minVal)
                 minVal= temp;
-        }return minVal;
+        }
+        return minVal;
     }
 };
