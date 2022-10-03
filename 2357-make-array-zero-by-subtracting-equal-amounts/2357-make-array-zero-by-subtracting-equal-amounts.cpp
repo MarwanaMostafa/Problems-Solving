@@ -1,5 +1,6 @@
 class Solution {
 public:
+        
     int minimumOperations(vector<int>& nums) {
         
     map<int, int> count;
@@ -11,5 +12,6 @@ public:
         return count.size() - 1;
         
     return count.size()-1;//because when we do check in if condition if condition fail then add zero to map so we need remove zero
+   
     }
 };
