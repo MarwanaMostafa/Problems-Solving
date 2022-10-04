@@ -3,7 +3,9 @@ public:
     vector<int> rearrangeArray(vector<int>& nums) {
         
     vector<int> positive;
+        
     vector<int> negative;
+    
     vector<int> result;
     for (int i = 0; i < nums.size(); i++)
     {
