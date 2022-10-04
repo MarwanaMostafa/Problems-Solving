@@ -12,6 +12,9 @@ public:
         else
             negative.push_back(nums[i]);
     }
+        
+        
+        
     for (int i = 0; i < positive.size(); i++)
     {
         result.push_back(positive[i]);
