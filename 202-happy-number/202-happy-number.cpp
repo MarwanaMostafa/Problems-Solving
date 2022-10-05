@@ -1,7 +1,7 @@
 class Solution {
 public:
     bool isHappy(int n) {
-        map<int, int> Isrepeated;
+    map<int, int> Isrepeated;
     int temp = 0;
     while (n != 1)
     {
