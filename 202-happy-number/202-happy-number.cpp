@@ -8,7 +8,6 @@ public:
         while (n > 0)
         {
             temp += (n % 10) * (n % 10);
-            cout << temp << endl;
             n /= 10;
         }
         Isrepeated[temp]++;
