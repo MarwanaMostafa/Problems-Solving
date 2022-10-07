@@ -5,6 +5,7 @@ public:
     string temp(n - 1, 'a');
     if (n % 2 == 0)
         return (temp + 'b');
+        
     return (temp + 'a');
     }
 };
