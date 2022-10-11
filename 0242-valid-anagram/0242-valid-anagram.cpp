@@ -13,7 +13,7 @@ public:
                 return false;
             count[t[i]]--;
         }
-                    return true;
+           return true;
 
     }
     
