@@ -17,7 +17,7 @@ public:
         }
     }
     if (counter > result)
-           return counter;
+            result = counter;
     return result;
     }
 };
