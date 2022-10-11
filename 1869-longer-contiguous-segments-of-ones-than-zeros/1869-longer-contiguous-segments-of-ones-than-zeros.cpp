@@ -16,7 +16,9 @@ public:
             counter = 0;
         }
     }
-        if(counter>resultOnes)
+    if(resultOnes>s.length()/2)
+        return true;
+    if(counter>resultOnes)
             resultOnes=counter;
     counter=0;
     for (int i = 0; i < s.length(); i++)
