@@ -10,8 +10,7 @@ public:
             counter++;
         else
         {
-            if (counter != 0)
-                if (counter > result)
+            if (counter != 0 &&counter>result)
                     result = counter;
             counter = 0;
         }
