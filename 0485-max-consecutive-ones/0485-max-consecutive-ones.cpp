@@ -16,8 +16,8 @@ public:
             counter = 0;
         }
     }
-         if (counter > result)
-                    result = counter;
+    if (counter > result)
+           return counter;
     return result;
     }
 };
