@@ -8,7 +8,7 @@ public:
                 num1-=num2;
             else 
                 num2-=num1;
- countOperation++;
+            countOperation++;
         }
         return countOperation;
     }
