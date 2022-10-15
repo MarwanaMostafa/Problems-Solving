@@ -16,12 +16,10 @@ public:
         temp = row[i];
         for (int j = 0; j < matrix[temp].size(); j++)
             matrix[temp][j] = 0;
-    }
-    for (int i = 0; i < column.size(); i++)
-    {
         temp = column[i];
         for (int j = 0; j < matrix.size(); j++)
             matrix[j][temp] = 0;
+
     }
     }
 };
