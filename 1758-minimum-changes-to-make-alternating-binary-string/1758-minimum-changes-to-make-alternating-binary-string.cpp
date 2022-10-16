@@ -11,6 +11,8 @@ public:
                  if(s[i]!='0')
                     counter2++;    
             }
+        
+        
             for(int i=0;i<s.length();i+=2)
             { 
                 if(s[i]!='0')
@@ -18,6 +20,8 @@ public:
                 if(s[i]!='1')
                     counter2++;
             }
-        return min(counter1,counter2);
+        if(counter1<counter2)
+            return counter1;
+        return counter2;
     }
 };
