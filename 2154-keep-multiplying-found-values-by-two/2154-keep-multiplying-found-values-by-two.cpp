@@ -10,7 +10,8 @@ public:
             if(search[original]==0)
                 return original;
             original=2*search[original];
-         }
+        }
+        
         return original;
     }
 };
