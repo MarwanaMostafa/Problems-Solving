@@ -3,8 +3,7 @@ public:
     int minOperations(string s) {
        int counter1=0;
        int counter2=0;
-        
-            for(int i=1;i<s.length();i+=2)
+        for(int i=1;i<s.length();i+=2)
             {
                 if(s[i]!='1')
                     counter1++;
