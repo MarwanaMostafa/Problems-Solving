@@ -7,10 +7,10 @@ public:
             filter[nums[i]]++;
         
         for(int i=0;i<nums.size();i++)
-            if(filter[nums[i]]==1&&filter[nums[i]+1]==0&&
-              filter[nums[i]-1]==0)
+        {    if(filter[nums[i]]>1||filter[nums[i]+1]>0||filter[nums[i]-1]>0)
+                    continue;
                 result.push_back(nums[i]);
-
+        }
         
         
         return result;
