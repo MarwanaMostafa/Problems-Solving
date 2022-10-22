@@ -9,7 +9,8 @@ public:
         swap=false;
         for(int j=0;j<s.length()-1;j++)
         {
-            
+            if(s[j]=='1')
+                continue;
             if(s[j]=='0'&&s[j+1]=='1')
             {
                 s[j]='1';
