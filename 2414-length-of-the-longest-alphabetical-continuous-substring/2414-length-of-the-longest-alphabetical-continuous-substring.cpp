@@ -1,12 +1,9 @@
 class Solution {
 public:
     int longestContinuousSubstring(string s) {
-        int result=0;
+        int result=1;
         int counter=1;
-        int len=s.length();
-        if(len==1)
-            return 1;
-        for(int i=0;i<len-1;i++)
+        for(int i=0;i<s.length()-1;i++)
         {
             if(s[i+1]-1==s[i])
                 counter++;
