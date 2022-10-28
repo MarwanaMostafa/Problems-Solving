@@ -21,8 +21,6 @@ public:
             len++;
             temp=temp->next;
         }
-        
-       
         temp=head;
         len/=2;
         for(int i=0;i<len-1;++i)
