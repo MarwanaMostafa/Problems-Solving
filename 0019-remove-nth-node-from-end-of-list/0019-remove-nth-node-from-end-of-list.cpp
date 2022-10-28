@@ -21,16 +21,11 @@ public:
             len++;
             temp=temp->next;
         }
-        if(len==2&&n==1)
-        {    head->next=nullptr;
-        return head;}
-         if(len==2&&n==2)
-        return head->next;
-    if(len==n)
-    {
-        head=head->next;
-            return head;
-    }   
+         if(len==n)
+        {
+                head=head->next;
+                return head;
+         }   
         
         temp=head;
         for(int i=0;i<len-n-1;++i)
