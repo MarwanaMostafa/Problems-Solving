@@ -7,7 +7,6 @@ public:
             index=1;
         else if(ruleKey=="name")
             index=2;
-
             
         for(int i=0;i<items.size();i++)
             if(items[i][index]==ruleValue)
