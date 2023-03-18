@@ -1,34 +1,32 @@
 class Solution {
 public:
-  
-int getDivisors(int n)
-{
-  int count =0,result=0;
-    
-  for (int i=1; i<=sqrt(n)&&count<5; i++)
-  {
-    if (n%i == 0)
+ 
+int sumFourDivisors(vector<int>& nums) {
+       int finalResult=0;
+       for(int i=0;i<nums.size();i++){
+            int count =0,result=0;
+            for (int j=1; j<=sqrt(nums[i])&&count<5; j++)
+            {
+    if (nums[i]%j == 0)
     {
-      if (n/i == i)
+      if (nums[i]/j == j)
       {
         count++;
-        result+=i;
+        result+=j;
       }
       else
       {
         count+=2;
-        result+=i+n/i;
+        result+=j+nums[i]/j;
       }
     }
   }
-  if(count!=4)
-    return 0;
-  return result;    
-}
-int sumFourDivisors(vector<int>& nums) {
-       int result=0;
-       for(int i=0;i<nums.size();i++)
-          result+= getDivisors(nums[i]);
-      return result;
+       
+             if(count==4)
+                 finalResult+=result;
+       
+       
+       }
+      return finalResult;
 }
 };
