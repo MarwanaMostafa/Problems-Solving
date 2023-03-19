@@ -12,6 +12,7 @@ public:
     int vowelStrings(vector<string>& words, int left, int right) {
         int result=0;
         while(left<=right){
+            
             if(IsVowel(words[left]))
                 result++;
         left++;
