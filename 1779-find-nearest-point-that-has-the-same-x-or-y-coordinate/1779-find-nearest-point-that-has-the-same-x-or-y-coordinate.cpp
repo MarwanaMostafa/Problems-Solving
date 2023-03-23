@@ -6,10 +6,10 @@ public:
         {
             if(points[i][0]==x ||points[i][1]==y)
             {
-                
-                if(result>abs(points[i][0]-x)+ abs(points[i][1]-y))
+                int z=abs(points[i][0]-x)+ abs(points[i][1]-y);
+                if(result>z)
                 {
-                    result=abs(points[i][0]-x)+ abs(points[i][1]-y);
+                    result=z;
                     index=i;
                 }
             }
