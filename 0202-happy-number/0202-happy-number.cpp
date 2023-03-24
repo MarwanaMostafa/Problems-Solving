@@ -12,8 +12,7 @@ public:
                 result+=(n%10)*(n%10);
                 n/=10;
             }
-            n=result;
-            
+            n=result;   
         }
         
         return n==1;
