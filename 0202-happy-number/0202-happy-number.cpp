@@ -13,12 +13,10 @@ public:
                 n/=10;
             }
             n=result;
-            if(n==1)
-                return true;
             
         }
         
-        return false;
+        return n==1;
     }
     
 };
