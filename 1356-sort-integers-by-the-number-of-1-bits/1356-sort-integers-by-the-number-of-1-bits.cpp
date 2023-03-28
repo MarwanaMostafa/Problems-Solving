@@ -4,9 +4,11 @@ public:
     vector<int> sortByBits(vector<int>& arr) {
         vector<pair<int,int>>result;
       
+        int counter,number=0;
+
         for(int i=0;i<arr.size();i++)
         {
-                int counter=0,number=arr[i];
+            counter=0,number=arr[i];
             while(number!=0){
                  if(number%2!=0)
                      counter++;
