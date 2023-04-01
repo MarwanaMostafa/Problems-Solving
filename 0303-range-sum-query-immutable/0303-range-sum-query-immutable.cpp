@@ -7,9 +7,12 @@ public:
     
     int sumRange(int left, int right) {
         int result=0;
-        for(;left<=right;left++)
+        while(left<=right)
+        {
             result+=this->nums[left];
-        return result;
+        left++;
+        }
+            return result;
     }
 };
 
