@@ -23,7 +23,7 @@ public:
             else if(guess(mid)==0)
                 return mid;
             else 
-                l=mid;
+                l=mid+1;
         }
     return 0;
     }
