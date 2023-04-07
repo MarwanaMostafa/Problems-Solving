@@ -17,9 +17,9 @@ public:
             return n;
         while(1)
         {
-            mid=(l+(r-l)/2);
+            mid=(l+(n-l)/2);
             if(guess(mid)==-1) 
-                r=mid;
+                n=mid;
             else if(guess(mid)==0)
                 return mid;
             else 
