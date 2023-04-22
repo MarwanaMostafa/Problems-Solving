@@ -15,10 +15,7 @@ public:
         }
         indexRow=l;
         l=0,r=matrix[indexRow].size();
-        if (r==1&&matrix[indexRow][0]==target)
-            return true;
-        if (r==1&&matrix[indexRow][0]!=target)
-            return false;
+
         while(l<r)
         {
             mid=l+(r-l)/2;
