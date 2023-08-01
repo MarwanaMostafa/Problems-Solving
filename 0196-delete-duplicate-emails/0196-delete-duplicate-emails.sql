@@ -1,6 +1,4 @@
-# Please write a DELETE statement and DO NOT write a SELECT statement.
-# Write your MySQL query statement below
-DELETE A
-FROM Person A,Person B
-WHERE A.email=b.email
-and A.id>B.id
+DELETE obj
+FROM Person obj ,Person obj2 
+WHERE obj.email=obj2.email
+and obj.id>obj2.id
