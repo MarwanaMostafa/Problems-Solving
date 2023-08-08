@@ -4,9 +4,6 @@ public:
         int hayLen = haystack.length();
         int needleLen = needle.length();
 
-        if (needleLen == 0) {
-            return 0;
-        }
 
         if (hayLen < needleLen) {
             return -1;
