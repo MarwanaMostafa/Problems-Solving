@@ -12,7 +12,7 @@ public:
         
         for (int i = 0; i < hayLen ; ++i) {
             int j;
-            for (j = 0; j < needleLen; ++j) {
+            for (j = 0; j < needleLen; j++) {
                 if (haystack[i + j] != needle[j]) {
                     break;
                 }
