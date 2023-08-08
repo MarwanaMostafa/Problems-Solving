@@ -9,7 +9,8 @@ public:
             return -1;
         }
 
-        for (int i = 0; i <= hayLen - needleLen; ++i) {
+        
+        for (int i = 0; i <= hayLen ; ++i) {
             int j;
             for (j = 0; j < needleLen; ++j) {
                 if (haystack[i + j] != needle[j]) {
