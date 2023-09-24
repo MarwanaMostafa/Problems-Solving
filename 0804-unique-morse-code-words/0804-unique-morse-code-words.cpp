@@ -6,17 +6,17 @@ public:
         "-.-",  ".-..", "--",   "-.",  "---", ".--.", "--.-", ".-.",  "...",  "-",
         "..-",  "...-", ".--",  "-..-", "-.--", "--.."
     };    
-        set<string> res;
-        string temp="";
+        set<string> uniqueMorseCodes;
+        string morseRepresentation="";
         for(int i=0;i<words.size();i++)
         {
          for(char c: words[i])
-             temp+=table[(int)c-97];
-        res.insert(temp);
-            temp="";
+             morseRepresentation+=table[(int)c-97];
+            uniqueMorseCodes.insert(morseRepresentation);
+            morseRepresentation="";
             
         }
-        return res.size();
+        return uniqueMorseCodes.size();
         
         
     }
