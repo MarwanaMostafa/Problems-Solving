@@ -4,13 +4,16 @@ public:
         
         if(num==0)
             return "0";
+        
         string numberInBase7="";
         bool isNegative=false;
+        
         if(num<0)
         {    
             isNegative=true;
             num*=-1;
         }
+        
         while(num>0)
         {
             
@@ -19,6 +22,7 @@ public:
             numberInBase7=digit+numberInBase7;
             
         }
+        
         if(isNegative)
                 numberInBase7="-"+numberInBase7;
     
