@@ -7,6 +7,7 @@ public:
     int max2 = std::numeric_limits<int>::min();
     int max3 = std::numeric_limits<int>::min();
 
+        
     for (int n : nums) {
         if (n <= min1) {
             min2 = min1;
