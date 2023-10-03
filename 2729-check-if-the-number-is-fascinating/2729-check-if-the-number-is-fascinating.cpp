@@ -9,9 +9,6 @@ public:
         set<int> result;
         while(num1!=0)
         {
-            cout<<num1%10<<endl;
-            cout<<num2%10<<endl;
-            cout<<num3%10<<endl;
             if(num1%10!=0)
                 result.insert(num1%10);
             if(num2%10!=0)
