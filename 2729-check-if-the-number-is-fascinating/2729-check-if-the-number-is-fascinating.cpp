@@ -9,12 +9,13 @@ public:
         set<int> result;
         while(num1!=0)
         {
-            if(num1%10!=0)
-                result.insert(num1%10);
-            if(num2%10!=0)
-                result.insert(num2%10);
-            if(num3%10!=0)
-                result.insert(num3%10);
+            int temp1=num1%10,temp2=num2%10,temp3=num3%10;
+            if(temp1!=0)
+                result.insert(temp1);
+            if(temp2!=0)
+                result.insert(temp2);
+            if(temp3!=0)
+                result.insert(temp3);
             
             num1/=10;
             num2/=10;
