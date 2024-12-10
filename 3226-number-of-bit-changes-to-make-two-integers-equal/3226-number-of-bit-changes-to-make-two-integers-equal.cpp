@@ -1,19 +1,24 @@
 class Solution {
 public:
     int minChanges(int n, int k) {
-    //why 20 because constraint which max number is 10^6
-    bitset<20> firstNumber(n);
-    bitset<20> SecondNumber(k);
-    int counter=0;
-    for (int i = 0; i <20; i++)
+
+    int changes = 0; 
+
+    while (n > 0 || k > 0)
     {
-        if (firstNumber[i] == 0 && SecondNumber[i] == 1)
+        int bitN = n & 1; 
+        int bitK = k & 1; 
+        
+        if (bitK == 1 && bitN == 0)
             return -1;
-        if(firstNumber[i]==SecondNumber[i])
-            continue;
-        counter++;
+
+        if (bitN == 1 && bitK == 0)
+            changes++;
+
+        n >>= 1;
+        k >>= 1;
     }
 
-    return counter;
+    return changes;
     }
 };
